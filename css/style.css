@@ -5,6 +5,20 @@ body {
   background: #f8f8f8 url(../img/clean-container.jpg) repeat top left; 
 }
 
+a {
+  color: #FF5722;
+}
+
+.clear {
+  clear: both;
+}
+
+.pic { display: flex; justify-content: center; align-items: center; }
+.pic img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .section-title { 
   font-size: 1.5em;
   color: #888;
@@ -32,6 +46,7 @@ body {
   height: 32px;
   position: relative;
   top: -2px;
+  stroke-width: 24px;
 }
 .navbar-inverse { background-color: #f5f5f5; }
 .navbar-inverse .navbar-brand {
