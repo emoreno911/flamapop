@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 
 body {
+  font-size: 14px;
   padding-top: 100px;
   background: #f8f8f8 url(../img/clean-container.jpg) repeat top left; 
 }
@@ -13,10 +14,22 @@ a {
   clear: both;
 }
 
-.pic { display: flex; justify-content: center; align-items: center; }
+.pic { 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+}
 .pic img {
   width: 100%;
   margin-bottom: 20px;
+  margin-top: 15px;
+}
+.pic h6 {
+  color: #999;
+}
+div.pic.last img {
+  margin-top: 25px;
 }
 
 .section-title { 
@@ -42,10 +55,10 @@ a {
     vertical-align: text-bottom;
 }
 .brand svg {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   position: relative;
-  top: -2px;
+  top: 3px;
   stroke-width: 24px;
 }
 .navbar-inverse { background-color: #f5f5f5; }
@@ -56,5 +69,27 @@ a {
 .navbar-inverse .navbar-brand:hover, 
 .navbar-inverse .navbar-brand:focus {
     color: #e87e76;
+}
+
+ul.controls {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.controls li {
+  margin-bottom: 8px;
+}
+ul.controls i {
+  border: solid 1px #bbb;
+    padding: 5px;
+    border-radius: 2px;
+    margin-right: 5px;
+    width: 24px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+ul.controls li strong {
+  color: #F44336;
 }
 
